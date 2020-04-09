@@ -1,0 +1,156 @@
+https://codepen.io/ahera/pen/abvobjL
+
+1. What is Semantic HTML? 
+
+    This is html markup (tags) that have meaning for people and search engines, for example <section>, <header>, etc.
+
+2. What is HTML used for? 
+
+    HTML is a markup language. It's used to describe elements of a web page.
+
+3. What is an attribute and where do we put it? 
+
+    Inside a tag. For example <a href="#">Link</a>
+    href is an attribute
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+    It's used for headings. I could use it several times in a document, but is would be meaningful to use it only once.
+
+5. Name two tags that have required attributes
+    <a>, <link>
+
+6. What do we put in the head of our HTML document? 
+    title, meta data, links to scripts and stylesheets
+
+7. What is an id? 
+    it's an alias for an element on a page. it can be easier found by javascript
+    <section id="post"></section>
+
+8. What elements can I add an id to? 
+    To any element inside body
+
+9. How many times can I use the same id on a page? 
+    once
+
+10. What is a class? 
+    Similar to ID, but can be used many times and can be combined with other classes
+    
+    <button class="primary rounded">Button</button>
+    <button class="default rounded">Button</button>
+
+11. What elements can I add a class to? 
+
+    To any element inside body
+
+
+12. How many times can I use the same class on a page? 
+
+    As many as I want
+
+13. How do I get my link to open in a new tab?
+
+    <a href="page.html" target="_blank">Go</a>
+
+14. What is the alt attribute in the image tag used for? 
+    It's used for accessibility (screenreaders), for search engines, and when picture can't be downloaded
+
+15. How do I reference an id?
+    <section id="post"></section>
+    #post {  }
+
+16. What is the difference between a section and a div
+    section is the same as div, but has a meaning
+
+17. What is CSS used for? 
+    To stylize html elements
+
+18. How to we select an element? Example - every h2 on the page
+    h2 { color blue; }
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    Classes are needed for reusable elements, for example buttons
+    IDs are used for unique elements, like page blocks that used once
+
+20. How do we select classes in CSS?
+    .className {}
+
+21. How do we select a p element with a single class of “human””?
+
+    p.human {}
+
+22. What is a parent child selector? When would this be useful? 
+    It will define styles only for elements that are children of a parent element
+    
+    <div>
+        <a href="#">Blue</a>
+        <a href="#">Blue</a>
+        <a href="#">Blue</a>
+        
+        <p>
+             <a href="#">Not blue</a>
+        </p>
+
+    </div>
+    
+
+    div > a {
+        color: blue;
+    }
+
+
+23. How do you select all links within a div with the class of sidebar?
+    div a.sidebar {}
+
+24. What is a pseudo selector?
+    It is used to define the state of an element. Like hover, focus, etc.
+
+25. What do we use the change the spacing between lines?
+
+    line-height: 1.2;
+
+26. What do we use to change the spacing between letters?
+    letter-spacing: 2px;
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    
+28. How do I add a 1px border around my div that is dotted and black?
+    border: 1px dotted black;
+
+29. How do I select everything on the page? 
+    * {
+
+    }
+
+30. How do I write a comment in CSS?
+    /* comment*/
+
+31. How do I find out what file I am in, when I am using the command line? 
+    pwd
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm
+    It deletes permanently
+
+34. Why should I use version control?
+    I can write code together with others, test features and go back in history
+
+35. How often should I commit to github?
+    When I add a new feature
+
+36. What is the command we would use to push our repo up to github? 
+    git push -u origin branchname
+
+37. Walk me through Lambda's git flow. 
+    Fork a repository
+    Add the TL as a collaborator
+    Clone to the local machine
+    Create a branch first-lastName
+    Commit my changes to that branch
+    Push first-lastName branch to github
+    Create a pull request
+    The TL approves the merge to master
